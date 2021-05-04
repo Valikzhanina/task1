@@ -10,7 +10,12 @@ body {
   width: 100%;
   overflow: hidden;
   background-color: var(--background-color);
-  border: var(--border-color);
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border-top: var(--border-color);
+  border-left: var(--border-color);
+  box-sizing: border-box;
 }
 .container__block {
   width: 100%;
@@ -26,15 +31,19 @@ p {
   margin: 0;
 }
 .container__block-content {
-  border: var(--border-color);
   width: 200px;
   padding: 10px;
+  border-right: var(--border-color);
+  border-bottom: var(--border-color);
+  box-sizing: border-box;
 }
 .container__block-content-grow {
   flex-grow: 1;
 }
 .container__block-content-specific {
-  border: var(--border-color);
+  border-right: var(--border-color);
+  border-bottom: var(--border-color);
+  box-sizing: border-box;
   width: 100%;
   padding: 10px;
 }
